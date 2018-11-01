@@ -1,4 +1,4 @@
-#a script for an easier connection to vpnmakers in Bash terminal
+#a script for an easier connection to vpnmakers in Bash terminal using python 3.7
 #author: masoud qashqai
 #must run as sudo 
 
