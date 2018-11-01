@@ -3,11 +3,11 @@
 #must run as sudo 
 
 import subprocess
-from subprocess import Popen ,STDOUT ,PIPE
+from subprocess import Popen, STDOUT, PIPE
 import time
 
 #use uk server
-connection = Popen(["sudo", "openconnect", "uk.cisadd2.com"] , stdin=PIPE, stdout=PIPE , universal_newlines=True )
+connection = Popen(["sudo", "openconnect", "uk.cisadd2.com"] , stdin=PIPE, stdout=PIPE, universal_newlines=True )
 
 time.sleep(1)
 
@@ -16,5 +16,5 @@ yes = 'yes'
 username='username'
 passwd='passwd'
 
-concat_query = "{}\n{}\n{}".format(yes, username,passwd)
-connection.communicate(concat_query,timeout=10000)
+info = "{}\n{}\n{}".format(yes, username, passwd)
+connection.communicate(info, timeout=10000)
